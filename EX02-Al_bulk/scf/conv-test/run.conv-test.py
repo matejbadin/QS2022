@@ -23,7 +23,7 @@ for kp in np.linspace(KP_min, KP_max, KP_stp):
             os.system("rm -rf "+wd+"/scf.in")
             for line in f:
                 with open(wd + "/scf.in", "a") as fa:
-                    line = line.replace("$KATOF$",str(scf))
+                    line = line.replace("$CUTOFF$",str(scf))
                     line = line.replace("$KP$","{:3d}{:3d}{:3d}".format(kp,kp,kp))
                     fa.write(line)
-            os.system("cd "+wd+";pw.x <scf.in>scf.out")
+            os.system("cd "+wd+"; pw.x < scf.in > scf.out")

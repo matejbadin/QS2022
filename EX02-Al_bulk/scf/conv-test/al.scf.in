@@ -12,7 +12,7 @@
     celldm(1)   = 7.50,
     nat         = 1,
     ntyp        = 1,
-    ecutwfc     = $KATOF$
+    ecutwfc     = $CUTOFF$
     occupations = 'smearing',
     smearing    = 'marzari-vanderbilt', 
     degauss     = 0.05
