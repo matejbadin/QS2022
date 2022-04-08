@@ -1,16 +1,16 @@
  &control
     calculation  = 'scf'
-    prefix       = 'carbon-diamond',
-    outdir       = 'carbon-diamond-outdir'
-    pseudo_dir   = '../../../PP/'
+    prefix       = 'carbon-graphite',
+    outdir       = 'carbon-graphite-outdir'
+    pseudo_dir   = '../PP/'
     restart_mode = 'from_scratch',
     tstress      = .true.
     tprnfor      = .true.
  /
  &system
-    ibrav     = 2, 
-    celldm(1) = 6.515,
-    nat       = 2, 
+    ibrav     = 4,
+    ==== FILL ME ==============
+    nat       = ?,
     ntyp      = 1,
     ecutwfc   = $CUTOFF$,
     input_dft = 'rvv10',
@@ -24,7 +24,6 @@
 ATOMIC_SPECIES
  C  12.0107  C.rvv10-n-kjpaw_psl.1.0.0.UPF
 ATOMIC_POSITIONS crystal
- C 0.00 0.00 0.00
- C 0.25 0.25 0.25
+=== FILL ME =========
 K_POINTS automatic
-$KP$ 0 0 0
+=== FILL ME ========= (4 4 1)

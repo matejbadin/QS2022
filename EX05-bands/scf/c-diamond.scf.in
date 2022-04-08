@@ -1,7 +1,7 @@
  &control
     calculation  = 'scf'
     prefix       = 'carbon-diamond',
-    outdir       = 'outdir'
+    outdir       = 'carbon-diamond-outdir'
     pseudo_dir   = '../PP/'
     restart_mode = 'from_scratch',
     tstress      = .true.
@@ -9,7 +9,7 @@
  /
  &system
     ibrav     = 2, 
-    celldm(1) = 10.00, 
+    celldm(1) = 6.515,
     nat       = 2, 
     ntyp      = 1,
     ecutwfc   = $CUTOFF$,
