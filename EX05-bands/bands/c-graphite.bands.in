@@ -1,5 +1,5 @@
  &control
-    calculation = 'carbon-graphite-bands'
+    calculation = 'bands'
     prefix      = 'carbon-graphite'
     outdir      = 'carbon-graphite-outdir',
     pseudo_dir  = '../PP'
