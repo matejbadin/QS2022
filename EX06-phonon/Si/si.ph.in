@@ -1,13 +1,12 @@
-phonons of Si at Gamma point
- &inputph
-  tr2_ph   = 5.0d-16,
-  prefix   = 'silicon',
-  epsil    = .true.,
-  lraman   = .true.
-  trans    = .true.,
-  asr      = .true.
-  amass(1) = 28.08,
-  outdir   = 'calc',
-  fildyn   = 'si.gamma',
- /
-0.0 0.0 0.0
+Phonon calculation
+&inputph
+ outdir   = 'calc',
+ prefix   = 'silicon',
+ tr2_ph   = 1d-14,
+ ldisp    = .true.,
+ nq1      = 4,
+ nq2      = 4,
+ nq3      = 4,
+ amass(1) = 28.086,
+ fildyn  = 'si.dyn',
+/
