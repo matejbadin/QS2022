@@ -1,0 +1,11 @@
+#!/bin/bash
+#PBS -q batch
+#PBS -l nodes=hartree:ppn=04
+#PBS -l walltime=00:30:00
+#PBS -u badin
+#PBS -N PhononCalculations
+#PBS -e /home/badin/QS2022/EX08-phonon-tins/beta-tin-phonon-dos/error.txt
+#PBS -o /home/badin/QS2022/EX08-phonon-tins/beta-tin-phonon-dos/output.txt
+#PBS -V
+cd /home/badin/QS2022/EX08-phonon-tins/beta-tin-phonon-dos
+mpirun -np 4 ph.x < si.ph.in > si.ph.out
